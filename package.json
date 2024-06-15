@@ -1,0 +1,19 @@
+{
+  "name": "kotlin-todo-api-client-generator",
+  "version": "1.0.0",
+  "description": "TypeScript client generator for my Kotlin API",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "generate": "openapi-generator-cli generate && cd bbronswijk/kotlin-todo-api-client && pnpm i",
+    "publish-client": "npm publish --workspace bbronswijk/kotlin-todo-api-client --access public"
+  },
+  "workspaces": [
+    "bbronswijk/kotlin-todo-api-client"
+  ],
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.13.4"
+  },
+  "author": "bbronswijk",
+  "license": "MIT"
+}
